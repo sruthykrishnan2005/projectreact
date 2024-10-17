@@ -40,41 +40,70 @@
 
 
 
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Layout from '../component/Layout'
-import Home from '../component/Home'
-import About from '../component/About'
-import Product from '../component/Product'
-import img1 from '../assets/imgesprjt/img1.webp'
+// import {BrowserRouter,Routes,Route} from 'react-router-dom'
+// import Layout from '../component/Layout'
+// import Home from '../component/Home'
+// import About from '../component/About'
+// import Product from '../component/Product'
+// import img1 from '../assets/imgesprjt/img1.webp'
 
- function App(){
-  return(
+//  function App(){
+//   return(
+//     <>
+//     <div style={appStyle}></div>
+//     <header>
+//         <h1>Welcome to My Website</h1>
+//         <img src="" alt="My Image" style={imageStyle} />
+//       </header>
+//     <BrowserRouter>
+//     <Routes>
+//       <Route path='/' element={<Layout/>}>
+//         <Route index element={<Home/>}/>
+//         <Route path="contact" element={<Contact/>}/>
+//         <Route path="about" element={<About/>}/>
+//         <Route path="product" element={<Product/>}/>
+        
+      
+//       </Route>
+//     </Routes>
+//     <a href="" target="_blank">
+//       <img src={img1} className="Img react" alt="React img" />
+//     </a>
+//     </BrowserRouter>
+//     </>
+//   )
+//  }
+
+//  export default App
+
+
+
+
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Layout from './Component/Layout';
+import Home from './Component/Home';
+import Contact from './Component/Contact';
+import About from './Component/About';
+import Product from './Component/Product';
+
+
+function App() {
+  return (
     <>
-    <div style={appStyle}></div>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <img src="" alt="My Image" style={imageStyle} />
-      </header>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Layout/>}>
-        <Route index element={<Home/>}/>
-        <Route path="contact" element={<Contact/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="product" element={<Product/>}/>
-        
+      <Route index element={<Home/>}/>
+      <Route path="contact" element={<Contact/>}/>
+      <Route path="About" element={<About/>}/>
+      <Route path="Product" element={<Product/>}/>
       
       </Route>
     </Routes>
-    <a href="" target="_blank">
-      <img src={img1} className="Img react" alt="React img" />
-    </a>
     </BrowserRouter>
+      
     </>
   )
- }
+}
 
- export default App
-
-
-
+export default App
