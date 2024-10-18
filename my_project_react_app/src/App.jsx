@@ -78,13 +78,12 @@
 
 
 
-
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Layout from './Component/Layout';
-import Home from './Component/Home';
-import Contact from './Component/Contact';
-import About from './Component/About';
-import Product from './Component/Product';
+import Layout from './component/Layout';
+import Home from './component/Home';
+import Contact from './component/Contact';
+import About from './component/About';
+import Product from './component/Product';
 
 
 function App() {
