@@ -122,7 +122,7 @@ const Home = () => {
 
 
       <div className="container mt-3">
-        <div className="row" id="al">
+        <div className="row" id="a1">
           {product.map(pro => (
             <div className="col-lg-3 col-md-3 c0l-sm-6" key={pro.id}>
               <div className="card" onClick={() => view_p(pro)}>
